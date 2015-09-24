@@ -1,0 +1,123 @@
+{{#if Cond className '==' 'sucess'}}
+<div class="notice-wrap success">
+    <div class="notice-box">
+        <span class="notice-img"></span>
+        <h3>
+            $...成功！$
+        </h3>
+        <p>
+            $预计资金2个工作日到您的银行卡
+            <br>
+            交易结果以交易记录显示为准$
+        </p>
+        <a href="$###$" class="link-standard">$查看提现明细$</a>
+    </div>
+</div>
+{{/ifCond}}
+
+{{#if Cond className '==' 'waiting'}}
+<div class="notice-wrap waiting">
+    <div class="notice-box">
+        <span class="notice-img"></span>
+        <h3>
+            $正在...$
+        </h3>
+        <p>
+            $账户余额不足或超出发卡单笔支付限额$
+        </p>
+        <a href="$###$" class="link-standard">$重新支付$</a>
+        <a href="$###$" class="link-standard link-border">$返回我的资产$</a>
+    </div>
+</div>
+{{/ifCond}}
+
+{{#if Cond className '==' 'error'}}
+<div class="notice-wrap error">
+        <div class="notice-box">
+            <span class="notice-img"></span>
+            <h3>
+                $...失败！$
+            </h3>
+            <p>
+                $账户余额不足或超出发卡单笔支付限额$
+            </p>
+            <a href="$###$" class="link-standard">$重新支付$</a>
+            <a href="$###$" class="link-standard link-border">$返回我的资产$</a>
+        </div>
+    </div>
+{{/ifCond}}
+
+{{#if Cond className '==' 'info'}}
+<div class="notice-wrap info">
+    <div class="notice-box">
+        <span class="notice-img"></span>
+        <h3>
+            $验证中...！$
+        </h3>
+        <p>
+            <strong>$账户正在验证中，预计24小时内完成验证，请耐心等待。$</strong>
+            <br>
+            $审核记过将通过短信发送到您的手机号码。$
+            <br>
+            $验证成功后验证金额可用于交易或提现。$
+        </p>
+        <a href="$###$" class="link-standard">$进入账户管理$</a>
+    </div>
+</div>
+{{/ifCond}}
+
+{{#if Cond className '==' 'modal-success'}}
+<div class="notice-wrap success in-modal">
+    <div class="notice-box">
+        <span class="notice-img"></span>
+        <h3>
+            $...成功！$
+        </h3>
+        <p>
+            $账户正在验证中，预计24小时内完成验证，请耐心等待。$
+        </p>
+    </div>
+</div>
+{{/ifCond}}
+
+{{#if Cond className '==' 'modal-info'}}
+<div class="notice-wrap info in-modal">
+    <div class="notice-box">
+        <span class="notice-img"></span>
+        <h3>
+            $...信息！$
+        </h3>
+        <p>
+            $账户正在验证中，预计24小时内完成验证，请耐心等待。$
+        </p>
+    </div>
+</div>
+{{/ifCond}}
+
+{{#if Cond className '==' 'modal-error'}}
+<div class="notice-wrap error in-modal">
+    <div class="notice-box">
+        <span class="notice-img"></span>
+        <h3>
+            $...错误！$
+        </h3>
+        <p>
+            $账户正在验证中，预计24小时内完成验证，请耐心等待。$
+        </p>
+    </div>
+</div>
+{{/ifCond}}
+
+{{#if Cond className '==' 'modal-waiting'}}
+<div class="notice-wrap waiting in-modal">
+    <div class="notice-box">
+        <span class="notice-img"></span>
+        <h3>
+            $...等待！$
+        </h3>
+        <p>
+            $账户正在验证中，预计24小时内完成验证，请耐心等待。$
+        </p>
+    </div>
+</div>
+{{/ifCond}}

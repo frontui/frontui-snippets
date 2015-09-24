@@ -1,0 +1,34 @@
+{
+  "name": "frontui-snippets",
+  "version": "1.0.0",
+  "description": "frontui template snippets for IDE.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frontui/frontui-snippets.git"
+  },
+  "keywords": [
+    "frontui",
+    "Sublime",
+    "WebStorm"
+  ],
+  "author": "frontpay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frontui/frontui-snippets/issues"
+  },
+  "homepage": "https://github.com/frontui/frontui-snippets",
+  "devDependencies": {
+    "underscore": "^1.7.0",
+    "gulp": "^3.8.10",
+    "gulp-zip": "^2.0.2",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-util": "^2.2.14"
+  },
+  "dependencies": {
+    "handlebars": "^2.0.0"
+  }
+}

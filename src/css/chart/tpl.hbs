@@ -1,0 +1,17 @@
+{{#ifCond className '==' 'title'}}
+<div class="chart-title">
+    $交易数据统计$
+    <small>$(&nbsp;2015.05.01-2015.05.29&nbsp;)$</small>
+    <div class="chart-title-btns">
+        <a href="javascript:void(0);" role="button" class="btn default small-btn">
+            $今天$
+        </a>
+        <a href="javascript:void(0);" role="button" class="btn default small-btn current">
+            $最近30天$
+        </a>
+    </div>
+</div>
+{{/if}}
+<div class="chart-wrap">
+  <div id="$j-chart$" style="width: 100%; height: $254$px;"></div> 
+</div>

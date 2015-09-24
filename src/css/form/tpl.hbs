@@ -1,0 +1,293 @@
+<div class="form-frame">
+    <div class="form-title">
+        $form title$
+    </div>
+    {{#ifCond className '==' 'gray'}}
+    <div class="form-layer-gray-box">
+        <div class="form-layer1">
+            <div class="form-layer2">
+                <form autocomplete="off">
+                    <div class="form-group">
+                        <label class="form-control-label" for="$form-control-example1$">
+                            <b>*
+                            </b>
+                            <span>$标准表单标题宽度可以放十八个中文字符$
+                            </span>
+                            <em>：
+                            </em>
+                        </label>
+                        <div class="form-control-wrap">
+                            <input type="text" class="form-control" id="$$" placeholder="$表单提示语$">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-control-label" for="$form-control-example2$">
+                            <b>*
+                            </b>
+                            <span>$请输入密码$
+                            </span>
+                            <em>：
+                            </em>
+                        </label>
+                        <div class="form-control-wrap">
+                            <input type="password" class="form-control" id="$Password2$" placeholder="$表单提示语$">
+                            $<a class="form-control-tools-link">忘记密码</a>$
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-control-label" for="$***$">
+                            <b>*</b>
+                            <span>$dropdown $</span>
+                            <em>:</em>
+                        </label>
+                        <div class="form-control-wrap">
+                          $
+                            <div class="form-control-dropdown">
+                                <span class="form-control-dropdown-btn">
+                                    <i></i>
+                                </span>
+                                <div class="form-control-dropdown-value" aria-expanded="false">
+                                    <span class="bank-icon icon-cmb" title="招商银行"></span>
+                                    <span class="form-control-bank-card">招商银行&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;尾号1234</span>
+                                </div>
+                                <ul class="form-control-dropdown-menu">
+                                    <li title="">
+                                        <span class="bank-icon icon-icbc" title="工商银行"></span>
+                                        <span class="form-control-bank-card">工商银行&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;尾号1234</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            $
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-control-label" for="$form-control-5$">
+                            <span>$Data in form$
+                            </span>
+                            <em>：
+                            </em>
+                        </label>
+                        <div class="form-control-wrap">
+                            <div class="form-control-data">
+                                <span class="h3">$陈少峰$</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-control-wrap">
+                          $
+                            <div class="form-control-data">
+                                <span class="bank-icon icon-cmb" title="招商银行"></span>
+                                <span class="form-control-bank-card">招商银行&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;尾号1234</span>
+                            </div>
+                         $
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-control-label" for="form-control-5">
+                            <span>$Data in form$
+                            </span>
+                            <em>：
+                            </em>
+                        </label>
+                        <div class="form-control-wrap">
+                          $
+                            <div class="form-control-data">
+                                <strong class="h2 warning-FontColor">14,000.00</strong>&nbsp;元
+                                <div class="tooltips-icon">
+                                    i
+                                    <div class="tooltips">
+                                        部分款项未到期
+                                        <span class="tips-arrow-border"></span>
+                                        <span class="tips-arrow"></span>
+                                    </div>
+                                </div>
+                                <a class="link-standard">提现明细</a>
+                            </div>
+                            $
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-control-label" for="$form-control-5$">
+                            <span>$Data in form$
+                            </span>
+                            <em>：
+                            </em>
+                        </label>
+                        <div class="form-control-wrap">
+                            <div class="form-control-data">
+                                $06月18日24点前$
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-control-label" for="***">
+                            <b>* </b>
+                            <span>$输入验证码 $</span>
+                            <em>: </em>
+                        </label>
+                        <div class="form-control-wrap">
+                            <div class="form-control-verify">
+                                <input type="text" class="form-control" id="$Text1$">
+                                <button class="btn form-control-verify-btn">
+                                    $获取验证码$
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-control-wrap text-align-left plural-btns margin-top-20px">
+                            <button type="button" class="btn primary">$primary$</button>
+                            <a href="$###$" class="btn links">$button link$</a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    {{ else }}
+    <div class="form-layer1">
+        <div class="form-layer2">
+            <form autocomplete="off">
+
+                <div class="form-group">
+                    <label class="form-control-label" for="$form-control-example1$">
+                        <b>*
+                        </b>
+                        <span>$用户名$</span>
+                        <em>：
+                        </em>
+                    </label>
+                    <div class="form-control-wrap">
+                        <input type="text" class="form-control" id="$Text2$" placeholder="$表单提示语$">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="$form-control-example2$">
+                        <b>*
+                        </b>
+                        <span>$请输入密码$
+                        </span>
+                        <em>：
+                        </em>
+                    </label>
+                    <div class="form-control-wrap">
+                        <input type="password" class="form-control" id="$Password1$" placeholder="$表单提示语$">
+                        $<a class="form-control-tools-link">忘记密码</a>$
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="$***$">
+                        <b>*</b>
+                        <span>$dropdown $</span>
+                        <em>:</em>
+                    </label>
+                    <div class="form-control-wrap">
+                        $
+                        <div class="form-control-dropdown">
+                            <span class="form-control-dropdown-btn">
+                                <i></i>
+                            </span>
+                            <div class="form-control-dropdown-value">
+                                <span class="bank-icon icon-cmb" title="招商银行"></span>
+                                <span class="form-control-bank-card">招商银行&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;尾号1234</span>
+                            </div>
+                            <ul class="form-control-dropdown-menu">
+                                <li title="">
+                                    <span class="bank-icon icon-icbc" title="工商银行"></span>
+                                    <span class="form-control-bank-card">工商银行&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;尾号1234</span>
+                                </li>
+                            </ul>
+                        </div>
+                        $
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="$form-control-5$">
+                        <span>$Data in form$
+                        </span>
+                        <em>：
+                        </em>
+                    </label>
+                    <div class="form-control-wrap">
+                        <div class="form-control-data">
+                            <span class="h3">$陈少峰$</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-control-wrap">
+                        $<div class="form-control-data">
+                            <span class="bank-icon icon-cmb" title="招商银行"></span>
+                            <span class="form-control-bank-card">招商银行&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;尾号1234</span>
+                        </div>$
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="$form-control-5$">
+                        <span>$Data in form$
+                        </span>
+                        <em>：
+                        </em>
+                    </label>
+                    <div class="form-control-wrap">
+                        <div class="form-control-data">
+                          $
+                            <strong class="h2 warning-FontColor">14,000.00</strong>&nbsp;元
+                            <div class="tooltips-icon">
+                                i
+                                <div class="tooltips">
+                                    部分款项未到期
+                                    <span class="tips-arrow-border"></span>
+                                    <span class="tips-arrow"></span>
+                                </div>
+                            </div>
+                            <a class="link-standard">提现明细</a>
+                          $
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="$***$">
+                        <b>* </b>
+                        <span>$输入验证码 $</span>
+                        <em>: </em>
+                    </label>
+                    <div class="form-control-wrap">
+                        $<div class="form-control-verify">
+                            <input type="text" class="form-control" id="$***$">
+                            <button class="btn form-control-verify-btn">
+                                获取验证码
+                            </button>
+                        </div>$
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-control-wrap text-align-left plural-btns margin-top-20px">
+                        <button type="button" class="btn primary">$primary$</button>
+                        <a href="$###$" class="btn links">$button link$</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    {{/if}}
+</div>
