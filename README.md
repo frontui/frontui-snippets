@@ -5,9 +5,9 @@ FrontUI 代码片段。
 
 ## 下载代码片段
 
-- [JetBrains 系列编辑器（WebStorm、IntelliJ IDEA 等） 配置文件 `jar`](http://amazeui.org/download?ver=jetbrainsjar)
-- [JetBrains 系列编辑器（WebStorm、IntelliJ IDEA 等） XML 文件](http://amazeui.org/download?ver=jetbrains)
-- [Sublime Text](http://amazeui.org/download?ver=sublime)
+- [JetBrains 系列编辑器（WebStorm、IntelliJ IDEA 等） 配置文件 `jar`](https://github.com/frontui/frontui-snippets/blob/master/dist/jetbrains.jar?raw=true)
+- [JetBrains 系列编辑器（WebStorm、IntelliJ IDEA 等） XML 文件](https://github.com/frontui/frontui-snippets/blob/master/dist/JetBrains.zip?raw=true)
+- [Sublime Text](https://github.com/frontui/frontui-snippets/blob/master/dist/SublimeText.zip?raw=true)
 
 ## 安装
 
