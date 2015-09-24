@@ -9,9 +9,9 @@
     </span>
     <input class="form-control" type="text" value="$2015-05-17$" data-toggle="datetimepicker" readonly="readonly">
 </div>
-{{/if}}
+{{/ifCond}}
 
-{{#ifCond className '==' 'date'}}
+{{#ifCond className '==' 'modal'}}
 <div class="form-control-modal{{#if sizes}} {{sizes}}{{/if}}">
     <span class="form-control-modal-btn">
         <i></i>
@@ -20,18 +20,18 @@
         $点击我会弹出一个窗口$
     </div>
 </div>
-{{/if}}
+{{/ifCond}}
 
 {{#ifCond className '==' 'verify'}}
 <div class="form-control-verify">
     <input type="text" class="form-control" id="$form-control-verify1$">
     <button class="btn form-control-verify-btn">$获取验证码$</button>
 </div>
-{{/if}}
+{{/ifCond}}
 
 {{#ifCond className '==' 'draw'}}
 <div class="form-control-withdrawFull">
     <input type="text" class="form-control" id="$form-control-withdrawFull$">
     <button class="btn form-control-withdrawFull-btn">$全部提取$</button>
 </div>
-{{/if}}
+{{/ifCond}}
