@@ -2,5 +2,5 @@
 
 module.exports = {
   name: 'tab',
-  classNames: ['type2', 'search']
+  classNames: ['type2', 'search', 'date']
 };

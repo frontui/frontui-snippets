@@ -2,6 +2,10 @@
 <input type="text" class="form-control{{#if sizes}} {{sizes}}{{/if}}" placeholder="$表单提示语$">
 {{/unless}}
 
+{{#ifCond className '==' 'smallsize'}}
+<input type="text" class="form-control{{#if className}} {{className}}{{/if}}" placeholder="$表单提示语$">
+{{/ifCond}}
+
 {{#ifCond className '==' 'date'}}
 <div class="form-control-date{{#if sizes}} {{sizes}}{{/if}}">
     <span class="form-control-date-btn">

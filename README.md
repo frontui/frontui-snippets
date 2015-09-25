@@ -32,8 +32,8 @@ FrontUI 代码片段。
   <thead><th>组件</th><th>代码片段</th></thead>
   <tbody>
     <tr><td>bower 链接 (both CSS & JS)</td><td>fu-bower</td></tr>
-    <tr><td>bower 链接 (CSS only)</td><td>fu-bower:css</td></tr>
-    <tr><td>bower 链接 (JS only)</td><td>fu-bower:js</td></tr>
+    <tr><td>-bower 链接 (CSS only)</td><td>fu-bower:css</td></tr>
+    <tr><td>-bower 链接 (JS only)</td><td>fu-bower:js</td></tr>
   </tbody>
 </table>
 
@@ -135,19 +135,19 @@ FrontUI 代码片段。
   <tbody>
     <tr>
     <td>基本样式</td>
-    <td>fu-pagination</td>
+    <td>fu-page</td>
     </tr>
     <tr>
     <td>居中对齐</td>
-    <td>fu-pagination:center</td>
+    <td>fu-page:center</td>
     </tr>
     <tr>
     <td>右对齐</td>
-    <td>fu-pagination:right</td>
+    <td>fu-page:right</td>
     </tr>
     <tr>
     <td>左对齐</td>
-    <td>fu-pagination:left</td>
+    <td>fu-page:left</td>
     </tr>
   </tbody>
 </table>
@@ -308,10 +308,6 @@ FrontUI 代码片段。
     <tr>
     <td>小按钮</td>
     <td>fu-input:smallsize</td>
-    </tr>
-    <tr>
-    <td>激活的输入框</td>
-    <td>fu-input:active</td>
     </tr>
   </tbody>
 </table>

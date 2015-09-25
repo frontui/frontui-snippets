@@ -2,5 +2,6 @@
 
 module.exports = {
   name: 'input',
-  classNames: ['modal', 'date', 'verify', 'draw']
+  classNames: ['modal', 'date', 'verify', 'draw'],
+  sizes: ['smallsize']
 };

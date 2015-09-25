@@ -1,4 +1,4 @@
-{{# ifCond className '==' 'typ2'}}
+{{# ifCond className '==' 'type2'}}
 <div class="tabs-wrap type2">
     <ul class="tabs">
         <li class="active">
@@ -33,49 +33,49 @@
     </div>
 </div>
 {{ else }}
-  <div class="tabs-wrap type1">
-    {{# ifCond className '==' 'with-search'}}
-    <div class="tab-search-wrap">
-          <div class="tab-search-control-width">
-              <input type="text" class="form-control smallsize" placeholder="订单号、名称、流水号、对方账户">
-          </div>
-          <button type="submit" class="btn primary small-btn">搜索</button>
-      </div>
-    {{/ifCond}}
-    {{# ifCond className '==' 'with-date'}}
-    <div class="tab-search-wrap">
+<div class="tabs-wrap type1">
+  {{# ifCond className '==' 'search'}}
+  <div class="tab-search-wrap">
         <div class="tab-search-control-width">
-            <div class="form-control-date smallsize">
-                <span class="form-control-date-btn">
-                    <i></i>
-                </span>
-                <div class="form-control-date-value">
-                    $2015-07-16$
-                </div>
-            </div>
+            <input type="text" class="form-control smallsize" placeholder="订单号、名称、流水号、对方账户">
         </div>
-        <button type="submit" class="btn primary small-btn">$搜索$</button>
+        <button type="submit" class="btn primary small-btn">搜索</button>
     </div>
-    {{/ifCond}}
-      <ul class="tabs">
-          <li class="active">
-              <a href="$#ttp1$" class="tabs-btn">
-                  $tab one$
-              </a>
-          </li>
-          <li>
-              <a href="$#ttp2$" class="tabs-btn">
-                  $tab two$
-              </a>
-          </li>
-      </ul>
-  </div>
-  <div class="tabs-content">
-      <div class="tabs-panel active" id="$ttp1$">
-          $tab one content$
+  {{/ifCond}}
+  {{# ifCond className '==' 'date'}}
+  <div class="tab-search-wrap">
+      <div class="tab-search-control-width">
+          <div class="form-control-date smallsize">
+              <span class="form-control-date-btn">
+                  <i></i>
+              </span>
+              <div class="form-control-date-value">
+                  $2015-07-16$
+              </div>
+          </div>
       </div>
-      <div class="tabs-panel" id="$ttp2$">
-          $tab two content$
-      </div>
+      <button type="submit" class="btn primary small-btn">$搜索$</button>
   </div>
+  {{/ifCond}}
+    <ul class="tabs">
+        <li class="active">
+            <a href="$#ttp1$" class="tabs-btn">
+                $tab one$
+            </a>
+        </li>
+        <li>
+            <a href="$#ttp2$" class="tabs-btn">
+                $tab two$
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="tabs-content">
+    <div class="tabs-panel active" id="$ttp1$">
+        $tab one content$
+    </div>
+    <div class="tabs-panel" id="$ttp2$">
+        $tab two content$
+    </div>
+</div>
 {{/ifCond}}
