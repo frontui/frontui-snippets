@@ -32,8 +32,8 @@ FrontUI 代码片段。
   <thead><th>组件</th><th>代码片段</th></thead>
   <tbody>
     <tr><td>bower 链接 (both CSS & JS)</td><td>fu-bower</td></tr>
-    <tr><td>-bower 链接 (CSS only)</td><td>fu-bower:css</td></tr>
-    <tr><td>-bower 链接 (JS only)</td><td>fu-bower:js</td></tr>
+    <tr><td>bower 链接 (CSS only)</td><td>fu-bower:css</td></tr>
+    <tr><td>bower 链接 (JS only)</td><td>fu-bower:js</td></tr>
   </tbody>
 </table>
 

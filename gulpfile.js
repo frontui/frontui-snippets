@@ -86,7 +86,7 @@ var jsData = compileHBS(data.jsTpl, data.jsConfig);
 
 function compileWebstorm() {
   var result = [];
-  var fileName = 'frontui.xml';
+  var fileName = 'frontUI.xml';
   var dirPath = path.join(__dirname, config.dist.jetbrains);
 
   var data = cssData.concat(jsData);
@@ -110,6 +110,9 @@ function compileWebstorm() {
     snippet = snippet.replace(regGt, '&gt;');
     snippet = snippet.replace(regNewLine, '&#10;');
     snippet = snippet.replace(regQuo, '&quot;');
+    // 去掉换行符
+    snippet = snippet.replace(/(\n|\r)*/g, '');
+
 
     snippet = snippet.replace(regTab, function($0, $1) {
       var num = _.indexOf(arrNum, $0) + 1;
@@ -121,12 +124,15 @@ function compileWebstorm() {
     snippet = snippet.trim();
 
     var liveTpl = [
-      '  <template name="' + triggerName + '" value="' + snippet + '" toReformat="true" toShortenFQNames="true">\n',
-      tabVariable.join(''),
+      '  <template name="' + triggerName + '" value="' + snippet + '" toReformat="true" toShortenFQNames="true">',
+      tabVariable.join('\n'),
       '    <context>',
-      '      <option name="XSL_TEXT" value="true" />',
-      '      <option name="XML_TEXT" value="true" />',
-      '      <option name="XML" value="true" />',
+      // 坑爹的开源，是故意的吧，webstorm10修改一下就可以了
+      // '      <option name="XSL_TEXT" value="true" />',
+      // '      <option name="XML_TEXT" value="true" />',
+      // '      <option name="XML" value="true" />',
+      '       <option name="HTML_TEXT" value="true" />',
+      '       <option name="HTML" value="true" />',
       '    </context>',
       '  </template>'
     ].join('\n');
@@ -135,10 +141,12 @@ function compileWebstorm() {
 
   });
 
+  // console.log(result);
+
   var tpl = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<templateSet group="frontUI">',
-    result.join(''),
+    result.join('\n'),
     '</templateSet>'
   ].join('\n');
 
